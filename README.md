@@ -4,16 +4,34 @@
 
 **Aplikasi Form Absensi Mandiri untuk Pengunjung Perpustakaan UNISSULA.**
 
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
 </div>
+
+Pengunjung cukup memindai QR code yang ditempel di tiap ruangan, lalu mengisi form di HP. Ruangan langsung
+tercentang sesuai QR yang dipindai, dan data kunjungan dikirim ke backend
+[dashboard analytics perpustakaan](https://github.com/alvahraa/prototype-dashboard) untuk diolah jadi statistik.
+
+## 📸 Tampilan
+
+<p align="center">
+  <img src="docs/form-absensi.png" width="300" alt="Form absensi: ruangan Referensi tercentang otomatis dari QR" />
+  &nbsp;&nbsp;
+  <img src="docs/qr-generator.png" width="480" alt="Generator QR code per ruangan" />
+</p>
+<p align="center"><sub>Kiri: form absensi dibuka dari QR ruangan Referensi. Kanan: generator QR code per ruangan (<code>qr-generator/</code>).</sub></p>
 
 ---
 
 ## 🚀 Fitur Utama
 
-- **Pilihan Ruangan Tersedia**: Pengunjung dapat memilih ruangan yang dituju secara langsung (contoh: Audiovisual, Referensi, Sirkulasi, dll).
+- **Pilihan Ruangan Tersedia**: Pengunjung dapat memilih ruangan yang dituju secara langsung (Audiovisual, Referensi, Baca Lt. 1-3, Karel, SmartLab, BI Corner).
 - **Scan QR Code Ruangan**: Otomatis mencentang ruangan jika diakses melalui hasil scan QR Code khusus ruangan (parameter `?room=kode_ruangan`).
 - **Peminjaman & Pengembalian Kunci Loker**: Mendukung alur peminjaman loker untuk penitipan barang dan pengembalian kunci mandiri.
 - **Identifikasi Pengunjung**: Kolom pencatatan NIM, Nama, Prodi/Fakultas, Jenis Kelamin, dan Umur.
+- **Generator QR Code**: Halaman `qr-generator/` membuat, mengunduh, dan mencetak QR code untuk tiap ruangan.
 
 ---
 
